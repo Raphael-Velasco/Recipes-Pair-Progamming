@@ -43,6 +43,11 @@ const Box1 = styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+
+  @media(max-width:700px) {
+    width: 300px;
+  height: 500px;
+  }
 `;
 const Box2 = styled.div`
   width: 25vw;
@@ -55,6 +60,10 @@ const Box2 = styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  @media(max-width:700px) {
+    width: 300px;
+  height: 500px;
+  }
 `;
 const Box3 = styled.div`
   width: 25vw;
@@ -65,9 +74,16 @@ const Box3 = styled.div`
   justify-content:flex-start;
   align-items: center;
   flex-direction: column;
+  @media(max-width:700px) {
+    width: 300px;
+  height: 500px;
+  }
 `;
 const BoxsImages = styled.img`
-  max-width: 25vw;
+  width: 25vw;
+  @media(max-width:700px) {
+    width:100%;
+  } 
 `;
 const BoxsLines = styled.hr`
   background-color:#373737;
@@ -104,6 +120,9 @@ const AboutBox = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media (max-width: 700px)  {
+    margin:30px;
+  }
 `;
 const AboutImage = styled.img`
   width: 50vw;
@@ -128,6 +147,12 @@ const AboutP = styled.p`
   width: 350px;
   margin-top: 70px;
   text-align: left;
+  @media (max-width: 700px)  {
+    font-size: 12px;
+  width: 350px;
+  margin-top: 70px;
+  text-align: left;
+  }
 `;
 const SubscribeContainer = styled.div`
   display: flex;
@@ -177,7 +202,7 @@ export default class MainApp extends Component {
         <BoxsContainer>
           <Box1>
             <BoxsImages
-              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:e048e30a-811b-49f2-a92f-1af9a2985abd;revision=0?component_id=3f630898-5430-4084-a530-83df642c4b76&api_key=CometServer1&access_token=1656037450_urn%3Aaaid%3Asc%3AUS%3Ae048e30a-811b-49f2-a92f-1af9a2985abd%3Bpublic_f5c751301ac83bb2180d74d25ad16840176e671d"
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:e048e30a-811b-49f2-a92f-1af9a2985abd;revision=0?component_id=3f630898-5430-4084-a530-83df642c4b76&api_key=CometServer1&access_token=1659157200_urn%3Aaaid%3Asc%3AUS%3Ae048e30a-811b-49f2-a92f-1af9a2985abd%3Bpublic_520787adb39eadc394a98c0d5a0cf5dbe76c2a6a"
               alt=""
             />
             <Titles>
@@ -187,7 +212,7 @@ export default class MainApp extends Component {
           </Box1>
           <Box2>
             <BoxsImages
-              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:e048e30a-811b-49f2-a92f-1af9a2985abd;revision=0?component_id=6940ecee-9497-47c7-bc32-30dc58ecb408&api_key=CometServer1&access_token=1656037450_urn%3Aaaid%3Asc%3AUS%3Ae048e30a-811b-49f2-a92f-1af9a2985abd%3Bpublic_f5c751301ac83bb2180d74d25ad16840176e671d"
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:e048e30a-811b-49f2-a92f-1af9a2985abd;revision=0?component_id=6940ecee-9497-47c7-bc32-30dc58ecb408&api_key=CometServer1&access_token=1659157200_urn%3Aaaid%3Asc%3AUS%3Ae048e30a-811b-49f2-a92f-1af9a2985abd%3Bpublic_520787adb39eadc394a98c0d5a0cf5dbe76c2a6a"
               alt=""
             />
             <Titles>
@@ -197,7 +222,7 @@ export default class MainApp extends Component {
           </Box2>
           <Box3>
             <BoxsImages
-              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:e048e30a-811b-49f2-a92f-1af9a2985abd;revision=0?component_id=bf663e2d-434a-4d4d-8185-a9a0e5dce49d&api_key=CometServer1&access_token=1656037450_urn%3Aaaid%3Asc%3AUS%3Ae048e30a-811b-49f2-a92f-1af9a2985abd%3Bpublic_f5c751301ac83bb2180d74d25ad16840176e671d"
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:e048e30a-811b-49f2-a92f-1af9a2985abd;revision=0?component_id=bf663e2d-434a-4d4d-8185-a9a0e5dce49d&api_key=CometServer1&access_token=1659157200_urn%3Aaaid%3Asc%3AUS%3Ae048e30a-811b-49f2-a92f-1af9a2985abd%3Bpublic_520787adb39eadc394a98c0d5a0cf5dbe76c2a6a"
               alt=""
             />
             <Titles>
@@ -208,7 +233,7 @@ export default class MainApp extends Component {
         </BoxsContainer>
         <AboutContainer>
           <AboutImage
-            src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:e048e30a-811b-49f2-a92f-1af9a2985abd;revision=0?component_id=f27a09e5-c3d7-4466-924a-c97490798175&api_key=CometServer1&access_token=1656080842_urn%3Aaaid%3Asc%3AUS%3Ae048e30a-811b-49f2-a92f-1af9a2985abd%3Bpublic_96841ae20e67e3e670e60fc3c8d328c3b373fae2"
+            src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:e048e30a-811b-49f2-a92f-1af9a2985abd;revision=0?component_id=f27a09e5-c3d7-4466-924a-c97490798175&api_key=CometServer1&access_token=1659157200_urn%3Aaaid%3Asc%3AUS%3Ae048e30a-811b-49f2-a92f-1af9a2985abd%3Bpublic_520787adb39eadc394a98c0d5a0cf5dbe76c2a6a"
             alt=""
           />
           <AboutBox>
